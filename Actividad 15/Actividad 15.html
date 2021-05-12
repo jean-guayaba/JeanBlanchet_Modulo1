@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar pintura</title>
+</head>
+<body>
+    <h1>Añadir una nueva obra</h1>
+    <form action="Actividad15.php" method="post" enctype="multipart/form-data">
+        <fieldset style="width: 400px;">
+        <legend> <string> Información de de la obra</string> </legend>
+        <br><br>
+        <label for="imagen">Uplodea tu obra:
+            <input type="file" name="imagen"></input>
+        </label>
+        <br><br>
+        <label for="nombre">Nombre de la obra: 
+            <input type ="text" name="obra" placeholder="Ingresa el nombre de la obra que deseas subir" required></input>
+        </label>
+        <br><br>
+        <label for="fecha"> Fecha de publicación: 
+            <input type="text" name="año" placeholder="Ingresa la fecha de publicación"></input>
+        </label>
+        <br><br>
+        <label for="autor">Nombre del autor: 
+            <input type="text" name="autor" placeholder="Ingresa el nombre del autor"></input>
+        </label>
+        <br><br>
+        <button type="submit">Agrega</button>
+        </fieldset>
+    </form>
+</body>
+</html>
